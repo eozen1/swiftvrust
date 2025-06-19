@@ -1,4 +1,3 @@
-```markdown
 # Swift vs Rust Benchmark Suite
 
 This repository contains two small compute-heavy benchmarks to compare:
@@ -75,7 +74,7 @@ You can build and measure each variant individually, or use the provided script 
      ```bash
      cd matmul/bench-rust
      cargo build --release
-     ../bench-swift-mat 600
+     ./target/release/bench-rust 600
      ```
 
    * **Neural-net backprop (Swift):**
@@ -91,11 +90,11 @@ You can build and measure each variant individually, or use the provided script 
      ```bash
      cd neuralnet/bench-rust
      cargo build --release
-     ../bench-swift-nn 1024 512 10 50
+     ./target/release/bench-rust 1024 512 10 50
      ```
 
 4. **Run all benchmarks end-to-end**
-   Use the provided script (make executable first):
+   Use the provided script (make it executable first):
 
    ```bash
    chmod +x run_benchmarks.sh
@@ -124,6 +123,3 @@ You can build and measure each variant individually, or use the provided script 
 ## License
 
 This project is licensed under the MIT License.
-
-```
-```
